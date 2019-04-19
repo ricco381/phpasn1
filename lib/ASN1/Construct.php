@@ -8,22 +8,22 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1;
+namespace FGR\ASN1;
 
 use ArrayAccess;
 use ArrayIterator;
 use Countable;
-use FG\ASN1\Exception\ParserException;
+use FGR\ASN1\Exception\ParserException;
 use Iterator;
 
 abstract class Construct extends ASNObject implements Countable, ArrayAccess, Iterator, Parsable
 {
-    /** @var \FG\ASN1\ASNObject[] */
+    /** @var \FGR\ASN1\ASNObject[] */
     protected $children;
     private $iteratorPosition;
 
     /**
-     * @param \FG\ASN1\ASNObject[] $children the variadic type hint is commented due to https://github.com/facebook/hhvm/issues/4858
+     * @param \FGR\ASN1\ASNObject[] $children the variadic type hint is commented due to https://github.com/facebook/hhvm/issues/4858
      */
     public function __construct(/* HH_FIXME[4858]: variadic + strict */ ...$children)
     {
@@ -131,7 +131,7 @@ abstract class Construct extends ASNObject implements Countable, ArrayAccess, It
     }
 
     /**
-     * @return \FG\ASN1\ASNObject[]
+     * @return \FGR\ASN1\ASNObject[]
      */
     public function getChildren()
     {
@@ -139,7 +139,7 @@ abstract class Construct extends ASNObject implements Countable, ArrayAccess, It
     }
 
     /**
-     * @return \FG\ASN1\ASNObject
+     * @return \FGR\ASN1\ASNObject
      */
     public function getFirstChild()
     {

@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1;
+namespace FGR\ASN1;
 
-use FG\ASN1\Exception\ParserException;
+use FGR\ASN1\Exception\ParserException;
 
 /**
  * Class ExplicitlyTaggedObject decorate an inner object with an additional tag that gives information about
@@ -31,13 +31,13 @@ use FG\ASN1\Exception\ParserException;
  */
 class ExplicitlyTaggedObject extends ASNObject
 {
-    /** @var \FG\ASN1\ASNObject[] */
+    /** @var \FGR\ASN1\ASNObject[] */
     private $decoratedObjects;
     private $tag;
 
     /**
      * @param int $tag
-     * @param \FG\ASN1\ASNObject $objects,...
+     * @param \FGR\ASN1\ASNObject $objects,...
      */
     public function __construct($tag, /* HH_FIXME[4858]: variadic + strict */ ...$objects)
     {

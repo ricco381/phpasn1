@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\X509;
+namespace FGR\X509;
 
-use FG\ASN1\Composite\RelativeDistinguishedName;
-use FG\ASN1\Identifier;
-use FG\ASN1\OID;
-use FG\ASN1\Parsable;
-use FG\ASN1\Composite\RDNString;
-use FG\ASN1\Universal\Sequence;
+use FGR\ASN1\Composite\RelativeDistinguishedName;
+use FGR\ASN1\Identifier;
+use FGR\ASN1\OID;
+use FGR\ASN1\Parsable;
+use FGR\ASN1\Composite\RDNString;
+use FGR\ASN1\Universal\Sequence;
 
 class CertificateSubject extends Sequence implements Parsable
 {

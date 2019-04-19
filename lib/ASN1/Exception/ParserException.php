@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1\Exception;
+namespace FGR\ASN1\Exception;
 
 class ParserException extends \Exception
 {

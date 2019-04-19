@@ -8,18 +8,18 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1;
+namespace FGR\ASN1;
 
 use Exception;
-use FG\ASN1\Exception\ParserException;
-use FG\ASN1\Universal\Sequence;
+use FGR\ASN1\Exception\ParserException;
+use FGR\ASN1\Universal\Sequence;
 
 class TemplateParser
 {
     /**
      * @param string $data
      * @param array $template
-     * @return \FG\ASN1\ASNObject|Sequence
+     * @return \FGR\ASN1\ASNObject|Sequence
      * @throws ParserException if there was an issue parsing
      */
     public function parseBase64($data, array $template)
@@ -31,7 +31,7 @@ class TemplateParser
     /**
      * @param string $binary
      * @param array $template
-     * @return \FG\ASN1\ASNObject|Sequence
+     * @return \FGR\ASN1\ASNObject|Sequence
      * @throws ParserException if there was an issue parsing
      */
     public function parseBinary($binary, array $template)

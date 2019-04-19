@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1\Universal;
+namespace FGR\ASN1\Universal;
 
 use Exception;
-use FG\ASN1\ASNObject;
-use FG\ASN1\Parsable;
-use FG\ASN1\Identifier;
+use FGR\ASN1\ASNObject;
+use FGR\ASN1\Parsable;
+use FGR\ASN1\Identifier;
 
 class OctetString extends ASNObject implements Parsable
 {

@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1;
+namespace FGR\ASN1;
 
-use FG\ASN1\Exception\ParserException;
+use FGR\ASN1\Exception\ParserException;
 
 /**
  * The Parsable interface describes classes that can be parsed from their binary DER representation.

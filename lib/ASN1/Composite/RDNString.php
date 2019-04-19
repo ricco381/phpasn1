@@ -8,17 +8,17 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1\Composite;
+namespace FGR\ASN1\Composite;
 
-use FG\ASN1\Universal\PrintableString;
-use FG\ASN1\Universal\IA5String;
-use FG\ASN1\Universal\UTF8String;
+use FGR\ASN1\Universal\PrintableString;
+use FGR\ASN1\Universal\IA5String;
+use FGR\ASN1\Universal\UTF8String;
 
 class RDNString extends RelativeDistinguishedName
 {
     /**
-     * @param string|\FG\ASN1\Universal\ObjectIdentifier $objectIdentifierString
-     * @param string|\FG\ASN1\ASNObject $value
+     * @param string|\FGR\ASN1\Universal\ObjectIdentifier $objectIdentifierString
+     * @param string|\FGR\ASN1\ASNObject $value
      */
     public function __construct($objectIdentifierString, $value)
     {

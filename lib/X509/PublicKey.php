@@ -8,19 +8,19 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\X509;
+namespace FGR\X509;
 
-use FG\ASN1\OID;
-use FG\ASN1\Universal\NullObject;
-use FG\ASN1\Universal\Sequence;
-use FG\ASN1\Universal\BitString;
-use FG\ASN1\Universal\ObjectIdentifier;
+use FGR\ASN1\OID;
+use FGR\ASN1\Universal\NullObject;
+use FGR\ASN1\Universal\Sequence;
+use FGR\ASN1\Universal\BitString;
+use FGR\ASN1\Universal\ObjectIdentifier;
 
 class PublicKey extends Sequence
 {
     /**
      * @param string $hexKey
-     * @param \FG\ASN1\ASNObject|string $algorithmIdentifierString
+     * @param \FGR\ASN1\ASNObject|string $algorithmIdentifierString
      */
     public function __construct($hexKey, $algorithmIdentifierString = OID::RSA_ENCRYPTION)
     {

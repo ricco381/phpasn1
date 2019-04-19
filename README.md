@@ -45,16 +45,16 @@ The constructors should be pretty self explanatory so you should have no big tro
 All data will be encoded using [DER encoding][8]
 
 ```php
-use FG\ASN1\OID;
-use FG\ASN1\Universal\Integer;
-use FG\ASN1\Universal\Boolean;
-use FG\ASN1\Universal\Enumerated;
-use FG\ASN1\Universal\IA5String;
-use FG\ASN1\Universal\ObjectIdentifier;
-use FG\ASN1\Universal\PrintableString;
-use FG\ASN1\Universal\Sequence;
-use FG\ASN1\Universal\Set;
-use FG\ASN1\Universal\NullObject;
+use FGR\ASN1\OID;
+use FGR\ASN1\Universal\Integer;
+use FGR\ASN1\Universal\Boolean;
+use FGR\ASN1\Universal\Enumerated;
+use FGR\ASN1\Universal\IA5String;
+use FGR\ASN1\Universal\ObjectIdentifier;
+use FGR\ASN1\Universal\PrintableString;
+use FGR\ASN1\Universal\Sequence;
+use FGR\ASN1\Universal\Set;
+use FGR\ASN1\Universal\NullObject;
 
 $integer = new Integer(123456);        
 $boolean = new Boolean(true);
@@ -81,7 +81,7 @@ echo base64_encode($myBinary);
 Decoding BER encoded binary data is just as easy as encoding it:
 
 ```php
-use FG\ASN1\ASNObject;
+use FGR\ASN1\ASNObject;
 
 $base64String = ...
 $binaryData = base64_decode($base64String);        
@@ -91,10 +91,10 @@ $asnObject = ASNObject::fromBinary($binaryData);
 // do stuff
 ```
 
-If you already know exactly how your expected data should look like you can use the `FG\ASN1\TemplateParser`:
+If you already know exactly how your expected data should look like you can use the `FGR\ASN1\TemplateParser`:
 
 ```php
-use FG\ASN1\TemplateParser;
+use FGR\ASN1\TemplateParser;
 
 // first define your template
 $template = [

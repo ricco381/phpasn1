@@ -8,17 +8,17 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\X509\CSR;
+namespace FGR\X509\CSR;
 
-use FG\ASN1\ASNObject;
-use FG\X509\CertificateExtensions;
-use FG\ASN1\OID;
-use FG\ASN1\Parsable;
-use FG\ASN1\Construct;
-use FG\ASN1\Identifier;
-use FG\ASN1\Universal\Set;
-use FG\ASN1\Universal\Sequence;
-use FG\ASN1\Universal\ObjectIdentifier;
+use FGR\ASN1\ASNObject;
+use FGR\X509\CertificateExtensions;
+use FGR\ASN1\OID;
+use FGR\ASN1\Parsable;
+use FGR\ASN1\Construct;
+use FGR\ASN1\Identifier;
+use FGR\ASN1\Universal\Set;
+use FGR\ASN1\Universal\Sequence;
+use FGR\ASN1\Universal\ObjectIdentifier;
 
 class Attributes extends Construct implements Parsable
 {

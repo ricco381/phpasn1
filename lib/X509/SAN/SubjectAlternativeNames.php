@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\X509\SAN;
+namespace FGR\X509\SAN;
 
-use FG\ASN1\Exception\ParserException;
-use FG\ASN1\ASNObject;
-use FG\ASN1\OID;
-use FG\ASN1\Parsable;
-use FG\ASN1\Identifier;
-use FG\ASN1\Universal\Sequence;
+use FGR\ASN1\Exception\ParserException;
+use FGR\ASN1\ASNObject;
+use FGR\ASN1\OID;
+use FGR\ASN1\Parsable;
+use FGR\ASN1\Identifier;
+use FGR\ASN1\Universal\Sequence;
 
 /**
  * See section 8.3.2.1 of ITU-T X.509.
@@ -77,7 +77,7 @@ class SubjectAlternativeNames extends ASNObject implements Parsable
         }
 
         $parsedObject = new self();
-        /** @var \FG\ASN1\ASNObject $object */
+        /** @var \FGR\ASN1\ASNObject $object */
         foreach ($sequence as $object) {
             if ($object->getType() == DNSName::IDENTIFIER) {
                 $domainName = DNSName::fromBinary($binaryData, $offsetOfSequence);

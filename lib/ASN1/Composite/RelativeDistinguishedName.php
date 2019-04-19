@@ -8,17 +8,17 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1\Composite;
+namespace FGR\ASN1\Composite;
 
-use FG\ASN1\Exception\NotImplementedException;
-use FG\ASN1\ASNObject;
-use FG\ASN1\Universal\Set;
+use FGR\ASN1\Exception\NotImplementedException;
+use FGR\ASN1\ASNObject;
+use FGR\ASN1\Universal\Set;
 
 class RelativeDistinguishedName extends Set
 {
     /**
-     * @param string|\FG\ASN1\Universal\ObjectIdentifier $objIdentifierString
-     * @param \FG\ASN1\ASNObject $value
+     * @param string|\FGR\ASN1\Universal\ObjectIdentifier $objIdentifierString
+     * @param \FGR\ASN1\ASNObject $value
      */
     public function __construct($objIdentifierString, ASNObject $value)
     {
@@ -29,7 +29,7 @@ class RelativeDistinguishedName extends Set
 
     public function getContent()
     {
-        /** @var \FG\ASN1\ASNObject $firstObject */
+        /** @var \FGR\ASN1\ASNObject $firstObject */
         $firstObject = $this->children[0];
         return $firstObject->__toString();
     }

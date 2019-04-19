@@ -8,15 +8,15 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1\Universal;
+namespace FGR\ASN1\Universal;
 
 use Exception;
-use FG\ASN1\Base128;
-use FG\ASN1\OID;
-use FG\ASN1\ASNObject;
-use FG\ASN1\Parsable;
-use FG\ASN1\Identifier;
-use FG\ASN1\Exception\ParserException;
+use FGR\ASN1\Base128;
+use FGR\ASN1\OID;
+use FGR\ASN1\ASNObject;
+use FGR\ASN1\Parsable;
+use FGR\ASN1\Identifier;
+use FGR\ASN1\Exception\ParserException;
 
 class ObjectIdentifier extends ASNObject implements Parsable
 {

@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\X509\SAN;
+namespace FGR\X509\SAN;
 
-use FG\ASN1\ASNObject;
-use FG\ASN1\Parsable;
-use FG\ASN1\Exception\ParserException;
+use FGR\ASN1\ASNObject;
+use FGR\ASN1\Parsable;
+use FGR\ASN1\Exception\ParserException;
 
 class IPAddress extends ASNObject implements Parsable
 {
@@ -57,7 +57,7 @@ class IPAddress extends ASNObject implements Parsable
         self::parseIdentifier($binaryData[$offsetIndex], self::IDENTIFIER, $offsetIndex++);
         $contentLength = self::parseContentLength($binaryData, $offsetIndex);
         if ($contentLength != 4) {
-            throw new ParserException("A FG\\X509\SAN\IPAddress should have a content length of 4. Extracted length was {$contentLength}", $offsetIndex);
+            throw new ParserException("A FGR\\X509\SAN\IPAddress should have a content length of 4. Extracted length was {$contentLength}", $offsetIndex);
         }
 
         $ipAddressString = ord($binaryData[$offsetIndex++]).'.';

@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1\Universal;
+namespace FGR\ASN1\Universal;
 
-use FG\ASN1\Identifier;
+use FGR\ASN1\Identifier;
 
 class Enumerated extends Integer
 {

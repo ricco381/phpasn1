@@ -6,12 +6,12 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\Utility;
+namespace FGR\Utility;
 
 /**
  * Class BigIntegerGmp
  * Integer representation of big numbers using the GMP extension to perform operations.
- * @package FG\Utility
+ * @package FGR\Utility
  * @internal
  */
 class BigIntegerGmp extends BigInteger

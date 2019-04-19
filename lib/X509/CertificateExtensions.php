@@ -8,18 +8,18 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\X509;
+namespace FGR\X509;
 
-use FG\ASN1\Exception\ParserException;
-use FG\ASN1\OID;
-use FG\ASN1\ASNObject;
-use FG\ASN1\Parsable;
-use FG\ASN1\Identifier;
-use FG\ASN1\Universal\OctetString;
-use FG\ASN1\Universal\Set;
-use FG\ASN1\Universal\Sequence;
-use FG\ASN1\Universal\ObjectIdentifier;
-use FG\X509\SAN\SubjectAlternativeNames;
+use FGR\ASN1\Exception\ParserException;
+use FGR\ASN1\OID;
+use FGR\ASN1\ASNObject;
+use FGR\ASN1\Parsable;
+use FGR\ASN1\Identifier;
+use FGR\ASN1\Universal\OctetString;
+use FGR\ASN1\Universal\Set;
+use FGR\ASN1\Universal\Sequence;
+use FGR\ASN1\Universal\ObjectIdentifier;
+use FGR\X509\SAN\SubjectAlternativeNames;
 
 class CertificateExtensions extends Set implements Parsable
 {
@@ -73,7 +73,7 @@ class CertificateExtensions extends Set implements Parsable
             if (count($children) < 2) {
                 throw new ParserException('Could not parse Certificate Extensions: Needs at least two child elements per extension sequence (object identifier and octet string)', $tmpOffset);
             }
-            /** @var \FG\ASN1\ASNObject $objectIdentifier */
+            /** @var \FGR\ASN1\ASNObject $objectIdentifier */
             $objectIdentifier = $children[0];
 
             /** @var OctetString $octetString */

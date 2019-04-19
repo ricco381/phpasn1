@@ -6,7 +6,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\Utility;
+namespace FGR\Utility;
 
 /**
  * Class BigInteger
@@ -15,7 +15,7 @@ namespace FG\Utility;
  *
  * Instances are immutable, all operations return a new instance with the result.
  *
- * @package FG\Utility
+ * @package FGR\Utility
  * @internal
  */
 abstract class BigInteger

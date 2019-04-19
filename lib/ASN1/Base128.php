@@ -1,8 +1,8 @@
 <?php
 
-namespace FG\ASN1;
+namespace FGR\ASN1;
 
-use FG\Utility\BigInteger;
+use FGR\Utility\BigInteger;
 use InvalidArgumentException;
 
 /**

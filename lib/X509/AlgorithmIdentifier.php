@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\X509;
+namespace FGR\X509;
 
-use FG\ASN1\Universal\NullObject;
-use FG\ASN1\Composite\AttributeTypeAndValue;
+use FGR\ASN1\Universal\NullObject;
+use FGR\ASN1\Composite\AttributeTypeAndValue;
 
 class AlgorithmIdentifier extends AttributeTypeAndValue
 {

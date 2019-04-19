@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\X509\SAN;
+namespace FGR\X509\SAN;
 
-use FG\ASN1\Universal\GeneralString;
+use FGR\ASN1\Universal\GeneralString;
 
 class DNSName extends GeneralString
 {

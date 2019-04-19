@@ -8,34 +8,34 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1;
+namespace FGR\ASN1;
 
-use FG\ASN1\Exception\ParserException;
-use FG\ASN1\Universal\BitString;
-use FG\ASN1\Universal\Boolean;
-use FG\ASN1\Universal\Enumerated;
-use FG\ASN1\Universal\GeneralizedTime;
-use FG\ASN1\Universal\Integer;
-use FG\ASN1\Universal\NullObject;
-use FG\ASN1\Universal\ObjectIdentifier;
-use FG\ASN1\Universal\RelativeObjectIdentifier;
-use FG\ASN1\Universal\OctetString;
-use FG\ASN1\Universal\Sequence;
-use FG\ASN1\Universal\Set;
-use FG\ASN1\Universal\UTCTime;
-use FG\ASN1\Universal\IA5String;
-use FG\ASN1\Universal\PrintableString;
-use FG\ASN1\Universal\NumericString;
-use FG\ASN1\Universal\UTF8String;
-use FG\ASN1\Universal\UniversalString;
-use FG\ASN1\Universal\CharacterString;
-use FG\ASN1\Universal\GeneralString;
-use FG\ASN1\Universal\VisibleString;
-use FG\ASN1\Universal\GraphicString;
-use FG\ASN1\Universal\BMPString;
-use FG\ASN1\Universal\T61String;
-use FG\ASN1\Universal\ObjectDescriptor;
-use FG\Utility\BigInteger;
+use FGR\ASN1\Exception\ParserException;
+use FGR\ASN1\Universal\BitString;
+use FGR\ASN1\Universal\Boolean;
+use FGR\ASN1\Universal\Enumerated;
+use FGR\ASN1\Universal\GeneralizedTime;
+use FGR\ASN1\Universal\Integer;
+use FGR\ASN1\Universal\NullObject;
+use FGR\ASN1\Universal\ObjectIdentifier;
+use FGR\ASN1\Universal\RelativeObjectIdentifier;
+use FGR\ASN1\Universal\OctetString;
+use FGR\ASN1\Universal\Sequence;
+use FGR\ASN1\Universal\Set;
+use FGR\ASN1\Universal\UTCTime;
+use FGR\ASN1\Universal\IA5String;
+use FGR\ASN1\Universal\PrintableString;
+use FGR\ASN1\Universal\NumericString;
+use FGR\ASN1\Universal\UTF8String;
+use FGR\ASN1\Universal\UniversalString;
+use FGR\ASN1\Universal\CharacterString;
+use FGR\ASN1\Universal\GeneralString;
+use FGR\ASN1\Universal\VisibleString;
+use FGR\ASN1\Universal\GraphicString;
+use FGR\ASN1\Universal\BMPString;
+use FGR\ASN1\Universal\T61String;
+use FGR\ASN1\Universal\ObjectDescriptor;
+use FGR\Utility\BigInteger;
 use LogicException;
 
 /**
@@ -199,7 +199,7 @@ abstract class ASNObject implements Parsable
      *
      * @throws ParserException
      *
-     * @return \FG\ASN1\ASNObject
+     * @return \FGR\ASN1\ASNObject
      */
     public static function fromBinary(&$binaryData, &$offsetIndex = 0)
     {

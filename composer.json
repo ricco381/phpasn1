@@ -2,18 +2,18 @@
     "name": "ricco381/phpasn1",
     "description": "A PHP Framework that allows you to encode and decode arbitrary ASN.1 structures using the ITU-T X.690 Encoding Rules.",
     "type": "library",
-    "homepage": "https://github.com/FGrosse/PHPASN1",
+    "homepage": "https://github.com/FGRrosse/PHPASN1",
     "license": "MIT",
     "authors": [
         {
             "name": "Friedrich Große",
             "email": "friedrich.grosse@gmail.com",
-            "homepage": "https://github.com/FGrosse",
+            "homepage": "https://github.com/FGRrosse",
             "role": "Author"
         },
         {
             "name": "All contributors",
-            "homepage": "https://github.com/FGrosse/PHPASN1/contributors"
+            "homepage": "https://github.com/FGRrosse/PHPASN1/contributors"
         }
     ],
     "keywords": [ "x690", "x.690", "x.509", "x509", "asn1", "asn.1", "ber", "der", "binary", "encoding", "decoding" ],
@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "FGR\\": "lib/"
+            "FGRR\\": "lib/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "FGR\\Test\\": "tests/"
+            "FGRR\\Test\\": "tests/"
         }
     },
     "extra": {

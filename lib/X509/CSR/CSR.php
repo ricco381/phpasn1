@@ -8,15 +8,15 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\X509\CSR;
+namespace FGR\X509\CSR;
 
-use FG\ASN1\OID;
-use FG\ASN1\Universal\Integer;
-use FG\ASN1\Universal\BitString;
-use FG\ASN1\Universal\Sequence;
-use FG\X509\CertificateSubject;
-use FG\X509\AlgorithmIdentifier;
-use FG\X509\PublicKey;
+use FGR\ASN1\OID;
+use FGR\ASN1\Universal\Integer;
+use FGR\ASN1\Universal\BitString;
+use FGR\ASN1\Universal\Sequence;
+use FGR\X509\CertificateSubject;
+use FGR\X509\AlgorithmIdentifier;
+use FGR\X509\PublicKey;
 
 class CSR extends Sequence
 {

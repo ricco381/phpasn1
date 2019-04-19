@@ -6,12 +6,12 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\Utility;
+namespace FGR\Utility;
 
 /**
  * Class BigIntegerBcmath
  * Integer representation of big numbers using the bcmath library to perform large operations.
- * @package FG\Utility
+ * @package FGR\Utility
  * @internal
  */
 class BigIntegerBcmath extends BigInteger

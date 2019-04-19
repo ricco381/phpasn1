@@ -6,7 +6,7 @@
 * add .gitattributes file to prevent examples and tests to be installed via composer when --prefer-dist was set
 
 #### v.2.0.0 (2017-08)
-* rename `FG\ASN1\Object` to `FG\ASN1\ASNObject` because `Object` is a special class name in the next major PHP release
+* rename `FGR\ASN1\Object` to `FGR\ASN1\ASNObject` because `Object` is a special class name in the next major PHP release
   - when you upgrade you have to adapt all corresponding `use` and `extends` statements as well as type hints and all
     usages of `Object::fromBinary(…)`.
 *  generally drop PHP 5.6 support
@@ -33,6 +33,6 @@
 * support big integers (closes #1 and #37)
 * enforce one code style via [styleci.io][9]
 * track code coverage via [coveralls.io][10]
-* replace obsolete `FG\ASN1\Exception\GeneralException` with `\Exception`
+* replace obsolete `FGR\ASN1\Exception\GeneralException` with `\Exception`
 * `Construct` (`Sequence`, `Set`) does now implement `ArrayAccess`, `Countable` and `Iterator` so its easier to use
 * add [`TemplateParser`][11]

@@ -8,17 +8,17 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1\Composite;
+namespace FGR\ASN1\Composite;
 
-use FG\ASN1\ASNObject;
-use FG\ASN1\Universal\Sequence;
-use FG\ASN1\Universal\ObjectIdentifier;
+use FGR\ASN1\ASNObject;
+use FGR\ASN1\Universal\Sequence;
+use FGR\ASN1\Universal\ObjectIdentifier;
 
 class AttributeTypeAndValue extends Sequence
 {
     /**
      * @param ObjectIdentifier|string $objIdentifier
-     * @param \FG\ASN1\ASNObject $value
+     * @param \FGR\ASN1\ASNObject $value
      */
     public function __construct($objIdentifier, ASNObject $value)
     {

@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FG\ASN1;
+namespace FGR\ASN1;
 
 class UnknownConstructedObject extends Construct
 {
@@ -19,7 +19,7 @@ class UnknownConstructedObject extends Construct
      * @param string $binaryData
      * @param int $offsetIndex
      *
-     * @throws \FG\ASN1\Exception\ParserException
+     * @throws \FGR\ASN1\Exception\ParserException
      */
     public function __construct($binaryData, &$offsetIndex)
     {
